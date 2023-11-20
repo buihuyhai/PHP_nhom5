@@ -5,7 +5,7 @@
 - Đổi tên project thành `PK-shop`
 - Tạo tên csdl và config theo file `config/config.php`
 - Import file PK.sql lên csdl vừa tạo
-- Mở trình duyệt và điền link `http://localhost/PK-shop/index.php` để truy cập
+- Mở trình duyệt và điền link `http://localhost/HB-shop/index.php` để truy cập
 
 ### Giao diện người dùng
 - **Hiển thị khi chưa đăng nhập**
