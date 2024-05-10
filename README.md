@@ -2,15 +2,15 @@
 ## Hướng dẫn cài đặt chương trình
 - Cài đặt [XAMPP 8.0.10/PHP 8.0.19](https://www.apachefriends.org/download.html)
 - Tải và giải nén project trong thư mục `xampp\htdocs`
-- Đổi tên project thành `PK-shop`
+- Đổi tên project thành `HB-shop`
 - Tạo tên csdl và config theo file `config/config.php`
-- Import file PK.sql lên csdl vừa tạo
+- Import file HB.sql lên csdl vừa tạo
 - Mở trình duyệt và điền link `http://localhost/HB-shop/index.php` để truy cập
 
 ### Giao diện người dùng
 - **Hiển thị khi chưa đăng nhập**
     * Màn hình `TRANG CHỦ`: 
-        * Thanh menu điều hướng [Trang chủ](http://localhost/PK-shop/index.php), [Sản phẩm](http://localhost/PK-shop/productList.php), [Đăng ký](http://localhost/PK-shop/register.php), [Đăng nhập](http://localhost/PK-shop/login.php), Đơn hàng, Giỏ hàng
+        * Thanh menu điều hướng [Trang chủ](http://localhost/HB-shop/index.php), [Sản phẩm](http://localhost/HB-shop/productList.php), [Đăng ký](http://localhost/HB-shop/register.php), [Đăng nhập](http://localhost/HB-shop/login.php), Đơn hàng, Giỏ hàng
         * Hiển thị slider tự động chuyển động các ảnh trong thư mục `./images/slider/`
         * Hiển thị tất cả sản phẩm theo thứ tự giảm của số lượng đã bán
         * Khi di chuyệt vào 1 sản phẩm, hình ảnh sẽ đc phòng to lên xíu, và để chuột trên 3 giây thì hiển thị tên đầy đủ của sản phẩm đó
@@ -18,7 +18,7 @@
         * Khi kích vào nút `XEM CHI TIÊT`, thì màn hình sẽ chuyển sang màn hình chi tiết sản phẩm đó và cũng có thể tiến hành thêm vào giỏ hàng
 
     * Màn hình `SẢN PHẨM`:
-        * Thanh menu điều hướng [Trang chủ](http://localhost/PK-shop/index.php), [Sản phẩm](http://localhost/PK-shop/productList.php), [Đăng ký](http://localhost/PK-shop/register.php), [Đăng nhập](http://localhost/PK-shop/login.php), Đơn hàng, Giỏ hàng
+        * Thanh menu điều hướng [Trang chủ](http://localhost/HB-shop/index.php), [Sản phẩm](http://localhost/HB-shop/productList.php), [Đăng ký](http://localhost/HB-shop/register.php), [Đăng nhập](http://localhost/HB-shop/login.php), Đơn hàng, Giỏ hàng
         * Hiển thị slider tự động chuyển động các ảnh trong thư mục `./images/slider/`
         * Hiển thị sản phẩm theo danh mục sản phẩm (tối đa 8 sản  phẩm trên 1 trang), khi chọn các danh mục sản phẩm khác nhau thì sẽ hiển thị ra các sản phẩm tương ứng với danh mục đó
         * Khi di chuyệt vào 1 sản phẩm, hình ảnh sẽ đc phòng to lên xíu, và để chuột trên 3 giây thì hiển thị tên đầy đủ của sản phẩm đó
@@ -33,7 +33,7 @@
         * Nhập lại mật khẩu phải giống mật khẩu đã nhập
         * Nhập ngày sinh phải đúng với định dạng date
         * Ấn đăng ký(chỗ này của em vẫn còn bug, ấn load lại trang để truyển bước tiếp theo ạ)
-        * Nhập mã xác mình( có thể lấy từ mã captcha từ (bẳng users)[http://localhost/phpmyadmin/index.php?route=/sql&db=pk_shop&table=users])
+        * Nhập mã xác mình( có thể lấy từ mã captcha từ (bẳng users)[http://localhost/phpmyadmin/index.php?route=/sql&db=HB_shop&table=users])
         * Thông báo xác minh thành công
 
     * Màn hình `ĐĂNG NHẬP`:
@@ -56,7 +56,7 @@
     ```
 
     * Màn hình `TRANG CHỦ`: 
-        * Thanh menu điều hướng [Trang chủ](http://localhost/PK-shop/index.php), [Sản phẩm](http://localhost/PK-shop/productList.php), Đăng xuất, [Đơn hàng](), [Giỏ hàng]()
+        * Thanh menu điều hướng [Trang chủ](http://localhost/HB-shop/index.php), [Sản phẩm](http://localhost/HB-shop/productList.php), Đăng xuất, [Đơn hàng](), [Giỏ hàng]()
         * Hiển thị slider tự động chuyển động các ảnh trong thư mục `./images/slider/`
         * Hiển thị tất cả sản phẩm theo thứ tự giảm của số lượng đã bán
         * Khi di chuyệt vào 1 sản phẩm, hình ảnh sẽ đc phòng to lên xíu, và để chuột trên 3 giây thì hiển thị tên đầy đủ của sản phẩm đó
@@ -64,7 +64,7 @@
         * Khi kích vào nút `XEM CHI TIÊT`, thì màn hình sẽ chuyển sang màn hình chi tiết sản phẩm đó và cũng có thể tiến hành thêm vào giỏ hàng
 
     * Màn hình `SẢN PHẨM`:
-        * Thanh menu điều hướng [Trang chủ](http://localhost/PK-shop/index.php), [Sản phẩm](http://localhost/PK-shop/productList.php), Đăng xuất, [Đơn hàng](), [Giỏ hàng]()
+        * Thanh menu điều hướng [Trang chủ](http://localhost/HB-shop/index.php), [Sản phẩm](http://localhost/HB-shop/productList.php), Đăng xuất, [Đơn hàng](), [Giỏ hàng]()
         * Hiển thị slider tự động chuyển động các ảnh trong thư mục `./images/slider/`
         * Hiển thị sản phẩm theo danh mục sản phẩm (tối đa 8 sản  phẩm trên 1 trang), khi chọn các danh mục sản phẩm khác nhau thì sẽ hiển thị ra các sản phẩm tương ứng với danh mục đó
         * Khi di chuyệt vào 1 sản phẩm, hình ảnh sẽ đc phòng to lên xíu, và để chuột trên 3 giây thì hiển thị tên đầy đủ của sản phẩm đó
@@ -92,9 +92,9 @@
       Tài khoản: admin@gmail.com
       Mật khẩu: a
     ```
-* Sau khi đăng nhập bằng tài khoản `admin` xong, truy cập vào link `http://localhost/PK-shop/admin/` để chuyển sang giao diện Admin: 
-    * Màn hinh [QUẢN LÝ SẢN PHẨM](http://localhost/PK-shop/admin/productlist.php)
-        * Thanh menu điều hướng [Quản lý sản phẩm](http://localhost/PK-shop/admin/productlist.php), [Quản lý danh mục](http://localhost/PK-shop/admin/categoriesList.php),  [Quản lý đơn hàng](http://localhost/PK-shop/admin/orderlist.php), [Quản lý người dùng](http://localhost/PK-shop/admin/userlist.php)
+* Sau khi đăng nhập bằng tài khoản `admin` xong, truy cập vào link `http://localhost/HB-shop/admin/` để chuyển sang giao diện Admin: 
+    * Màn hinh [QUẢN LÝ SẢN PHẨM](http://localhost/HB-shop/admin/productlist.php)
+        * Thanh menu điều hướng [Quản lý sản phẩm](http://localhost/HB-shop/admin/productlist.php), [Quản lý danh mục](http://localhost/HB-shop/admin/categoriesList.php),  [Quản lý đơn hàng](http://localhost/HB-shop/admin/orderlist.php), [Quản lý người dùng](http://localhost/HB-shop/admin/userlist.php)
         * Xử dụng phân trang để hiển thị(tối đa 8 sản phẩm trên 1 trang)
         * Hiển thị các sản phẩm theo dạng bảng gồm các thông tin về: Tên sản phẩm, hình ảnh, giá gốc, giá  khuyến mãi, tạo bởi, số lượng, trạng thái
         * Thao tác `Thêm mới`, màn hình chuyển sang giao diện thêm mới:
@@ -124,8 +124,8 @@
             * Nhập dữ liệu vào ô tìm kiếm
             * Màn hình sẽ hiển thị tất cả sản phẩm có tên sản phẩm thuộc từ khóa ( dử dụng LIKE '%search')
     
-    * Màn hinh [QUẢN LÝ DANH MỤC](http://localhost/PK-shop/admin/categoriesList.php)
-        * Thanh menu điều hướng [Quản lý sản phẩm](http://localhost/PK-shop/admin/productlist.php), [Quản lý danh mục](http://localhost/PK-shop/admin/categoriesList.php),  [Quản lý đơn hàng](http://localhost/PK-shop/admin/orderlist.php), [Quản lý người dùng](http://localhost/PK-shop/admin/userlist.php)
+    * Màn hinh [QUẢN LÝ DANH MỤC](http://localhost/HB-shop/admin/categoriesList.php)
+        * Thanh menu điều hướng [Quản lý sản phẩm](http://localhost/HB-shop/admin/productlist.php), [Quản lý danh mục](http://localhost/HB-shop/admin/categoriesList.php),  [Quản lý đơn hàng](http://localhost/HB-shop/admin/orderlist.php), [Quản lý người dùng](http://localhost/HB-shop/admin/userlist.php)
         * Xử dụng phân trang để hiển thị(tối đa 8 danh mục sản phẩm trên 1 trang)
         * Hiển các danh mục theo dạng bảng gồm các thông tin: Tên danh mục và trạng thái
         * Thao tác `Thêm mới`, màn hình chuyển sang giao diện thêm mới:
@@ -141,26 +141,26 @@
         * Thao tác `Tìm kiếm`
             * Nhập dữ liệu vào ô tìm kiếm
             * Màn hình sẽ hiển thị tất cả sản phẩm có tên sản phẩm thuộc từ khóa ( dử dụng LIKE '%search')
-    * Màn hinh [QUẢN LÝ ĐƠN HÀNG](http://localhost/PK-shop/admin/productlist.php)
-        * Thanh menu điều hướng [Quản lý sản phẩm](http://localhost/PK-shop/admin/productlist.php), [Quản lý danh mục](http://localhost/PK-shop/admin/categoriesList.php),  [Quản lý đơn hàng](http://localhost/PK-shop/admin/orderlist.php), [Quản lý người dùng](http://localhost/PK-shop/admin/userlist.php)
+    * Màn hinh [QUẢN LÝ ĐƠN HÀNG](http://localhost/HB-shop/admin/productlist.php)
+        * Thanh menu điều hướng [Quản lý sản phẩm](http://localhost/HB-shop/admin/productlist.php), [Quản lý danh mục](http://localhost/HB-shop/admin/categoriesList.php),  [Quản lý đơn hàng](http://localhost/HB-shop/admin/orderlist.php), [Quản lý người dùng](http://localhost/HB-shop/admin/userlist.php)
         * Hiển thị các mục [Đang xử lý](), [Đã xử lý](), [Đang giao hàng](), [Đã hoàn thành]()
         * Hiển thị các sản phẩm theo dạng bảng gồm các thông tin về: Mã đơn hàng, ngày đặt, ngày nhận, tình trạng (được lấy từ csdl)
-        * Khi kích vào nut [Đang xử lý](http://localhost/PK-shop/admin/orderlist.php)
+        * Khi kích vào nut [Đang xử lý](http://localhost/HB-shop/admin/orderlist.php)
             * Hiển thị các sản phẩm theo dạng bảng gồm các thông tin về: Mã đơn hàng, ngày đặt, ngày giao, tình trạng (được lấy từ csdl)
             * Khi kích vào nút `Chi tiết`, màn hình sẽ chuyển sang thông tin chi tiết của đơn hàng đó
                 * Khi ấn vào `Xác nhận`, đơn hàng sẽ được chuyển sang [Đã xử lý]()
-        * Khi kích vào nut [Đã xử lý](http://localhost/PK-shop/admin/orderlist.php)
+        * Khi kích vào nut [Đã xử lý](http://localhost/HB-shop/admin/orderlist.php)
             * Hiển thị các sản phẩm theo dạng bảng gồm các thông tin về: Mã đơn hàng, ngày đặt, ngày giao, tình trạng (được lấy từ csdl)
             * Khi kích vào nút `Giao hàng`, đơn hàng sẽ được chueyern sang [Đang giao hàng]()
-        * Khi kích vào nut [Đang giao hàng](http://localhost/PK-shop/admin/orderlist.php)
+        * Khi kích vào nut [Đang giao hàng](http://localhost/HB-shop/admin/orderlist.php)
             * Hiển thị các sản phẩm theo dạng bảng gồm các thông tin về: Mã đơn hàng, ngày đặt, ngày giao, tình trạng (được lấy từ csdl)
             * Khi kích vào nút `Chi tiết`, màn hình sẽ chuyển sang thông tin chi tiết của đơn hàng đó
-        * Khi kích vào nut [Đã hoàn thành](http://localhost/PK-shop/admin/orderlist.php)
+        * Khi kích vào nut [Đã hoàn thành](http://localhost/HB-shop/admin/orderlist.php)
             * Hiển thị các sản phẩm theo dạng bảng gồm các thông tin về: Mã đơn hàng, ngày đặt, ngày giao, tình trạng (được lấy từ csdl)
             * Khi kích vào nút `Chi tiết`, màn hình sẽ chuyển sang thông tin chi tiết của đơn hàng đó
     
-    * Màn hinh [QUẢN LÝ NGƯỜI DÙNG](http://localhost/PK-shop/admin/categoriesList.php)
-        * Thanh menu điều hướng [Quản lý sản phẩm](http://localhost/PK-shop/admin/productlist.php), [Quản lý danh mục](http://localhost/PK-shop/admin/categoriesList.php),  [Quản lý đơn hàng](http://localhost/PK-shop/admin/orderlist.php), [Quản lý người dùng](http://localhost/PK-shop/admin/userlist.php)
+    * Màn hinh [QUẢN LÝ NGƯỜI DÙNG](http://localhost/HB-shop/admin/categoriesList.php)
+        * Thanh menu điều hướng [Quản lý sản phẩm](http://localhost/HB-shop/admin/productlist.php), [Quản lý danh mục](http://localhost/HB-shop/admin/categoriesList.php),  [Quản lý đơn hàng](http://localhost/HB-shop/admin/orderlist.php), [Quản lý người dùng](http://localhost/HB-shop/admin/userlist.php)
         * Xử dụng phân trang để hiển thị(tối đa 8 danh mục sản phẩm trên 1 trang)
         * Hiển các danh mục theo dạng bảng gồm các thông tin: Họ và tên, Ngày sinh, Quê quán, Email, Chức vụ, Trạng thái (từ csdl)
         * Thao tác `Khóa`: Khi kích nút `Khóa` thì màn hình sẽ hiển thị thông báo
